@@ -1,9 +1,7 @@
 /*
- * 
  *  Algoritmo -> Le a quantidade de paes e broas de uma padaria e retorna o valor arrecadado e a poupar.
  *  Por Kalil de Oliveira, 
  *  
- * 
  * */
 
 package br.sc.senac.exercicios.lista1;
@@ -28,17 +26,17 @@ public class Classe003 {
 		broas = sc.nextInt();
 		
 		// processos
-		// valorPaes = valorPaes*paes;
-		// valorBroas = valorBroas*broas;
-		// totalVendido = valorPaes + valorBroas;
+		valorPaes = valorPaes*paes;
+		valorBroas = valorBroas*broas;
+		totalVendido = valorPaes + valorBroas;
 		poupanca = totalVendido*0.1; // ou totalVendido * 10/100;
 		
-		System.out.println("Total -> " + ((valorPaes*paes)+(valorBroas*broas)));
-		System.out.printf("Porcentagem -> %.2f", ((valorPaes*paes)+(valorBroas*broas))*0.1);
+		//System.out.println("Total -> " + ((valorPaes*paes)+(valorBroas*broas)));
+		//System.out.printf("Porcentagem -> %.2f", ((valorPaes*paes)+(valorBroas*broas))*0.1);
 		
 		// saidas
-		// System.out.printf("\nTotal Vendido -> %.2f ", totalVendido);
-		// System.out.printf("\nA guardar na poupanca -> %.2f ",  poupanca);
+		System.out.printf("\nTotal Vendido -> %.2f ", totalVendido);
+		System.out.printf("\nA guardar na poupanca -> %.2f ",  poupanca);
 		
 		sc.close();
 
