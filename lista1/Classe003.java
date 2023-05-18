@@ -8,7 +8,7 @@ package br.sc.senac.exercicios.lista1;
 import java.util.*;
 
 public class Classe003 {
-
+	  // CalculaCaixaPadaria
 	public static void main(String[] args) {
 		// variaveis
 		int paes=0;
