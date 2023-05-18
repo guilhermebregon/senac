@@ -1,19 +1,17 @@
 /*
- * 
  * 	Algoritmo -> Le as dimensões de um terreno retangular e exibir a área
- *  Por Kalil de Oliveira
- * 
- * */
+ *      Por Kalil de Oliveira
+ */
 
 package br.sc.senac.exercicios.lista1;
 import java.util.*;
 
 public class Classe001 {
-
+	   // CalculaArea
 	public static void main(String[] args) {
 		// variaveis
-		double lado1=5;
-		double lado2=2;
+		double lado1=0;
+		double lado2=0;
 		Scanner sc = new Scanner(System.in);
 		
 		// Entradas
