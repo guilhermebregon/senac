@@ -8,7 +8,7 @@
 package br.sc.senac.exercicios.lista1;
 import java.util.*;
 public class Classe007 {
-
+	// CalculaDiasNoAno
 	public static void main(String[] args) {
 		// variaveis
 		int dia=0;
