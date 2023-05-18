@@ -1,23 +1,19 @@
 /*
- * 
  *  Algoritmo -> Le nome e idade e devolve qtdade de dias de vida (ano = 365 dias).
  *  Por Kalil de Oliveira
- *  
- *  
- * 
+ *   
  * */
 
 package br.sc.senac.exercicios.lista1;
 import java.util.*;
 
 public class Classe004 {
-
+	   // CalculaDiasDeVida
 	public static void main(String[] args) {
-		
 		// variaveis
-		int idade=0; 							// primitiva float double char int
-		String nome=" ";						// objeto
-		Scanner sc = new Scanner(System.in);  	// objeto
+		int idade=0; 
+		String nome=" ";
+		Scanner sc = new Scanner(System.in);
 		
 		// entradas
 		System.out.print("Nome -> ");
