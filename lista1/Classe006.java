@@ -1,8 +1,6 @@
 /*
- * 
  *  Algoritmo -> Lê o peso (quilos) de uma refeição e retorna o valor a pagar
- *  Por Kalil de Oliveira, data 17 de maio de 2023;
- * 
+ *  Por Kalil de Oliveira, data 17 de maio de 2023; 
  * 
  */
 
@@ -10,7 +8,7 @@ package br.sc.senac.exercicios.lista1;
 import java.util.Scanner;
 
 public class Classe006 {
-
+	   // CalculaValorPrato
 	public static void main(String[] args) {
 		
 		// variaveis
