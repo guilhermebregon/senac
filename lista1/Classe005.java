@@ -1,17 +1,14 @@
 /*
- * 
  *  Algoritmo -> Le o preco da gasolina, valor pago e retorna qtdade de litros comprados
  *  Por Kalil de Oliveira
  *  
- * 
  * */ 
 
 package br.sc.senac.exercicios.lista1;
 import java.util.Scanner;
 
 public class Classe005 {
-		//CalculoCompraCombustivel
-	
+		//CalculaCompraCombustivel	
 	public static void main(String[] args) {
 
 		// variaveis
