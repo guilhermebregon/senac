@@ -20,6 +20,7 @@ public class Classe008 {
 		int quantidade = entrada.nextInt();
 		valorPequena = valorPequena*quantidade;
 		// valorPequena *= quantidade;
+		
 		System.out.print("Quantidade medias -> ");
 		quantidade = entrada.nextInt();
 		valorMedia = valorMedia*quantidade;
@@ -28,14 +29,14 @@ public class Classe008 {
 		valorGrande = valorGrande*quantidade;
 		
 		// saidas
-		System.out.println
-				("Valor arrecadado -> "+
-					(
-						valorPequena
-						+valorMedia
-						+valorGrande
-					)
-				);
+		System.out.println 
+		   ("Valor arrecadado -> "+ 
+		      (
+		        valorPequena
+			+valorMedia
+			+valorGrande
+		      )
+		   );
 		System.out.println("Pequena -> "+valorPequena);
 		System.out.println("Media -> "+valorMedia);
 		System.out.println("Gramde -> "+valorGrande);
