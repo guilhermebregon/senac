@@ -1,15 +1,13 @@
 /*
- * 
  *  Algoritmo -> Calcula a quantidade de ferraduras para equipar os cavalos comprados para um haras.
- *  Por Kalil de Oliveira
- * 
- * */
+ *  Por Kalil de Oliveira 
+ */
 
 package br.sc.senac.exercicios.lista1;
 import java.util.*;
 
 public class Classe002 {
-
+	   // CalculaFerraduras
 	public static void main(String[] args) {
 	
 	// variaveis
