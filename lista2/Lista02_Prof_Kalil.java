@@ -5,10 +5,16 @@ Versão dos exercícios da lista 02 do Professor Kalil - Por Jose Tavares Equipe
 https://github.com/joseumtavares
 */
 
+// MEUS PARABÉNS, JOSÉ! FICOU EXCELENTE O SEU TRABALHO. ONTEM NÓS MODIFICAMOS O EXERCÍCIO 1 DA LISTA 2.
+// A IDEIA FOI TRANSFORMAR A CLASSE "SUBTRAÇÃO" POR "TROCO", OU SEJA, A REGRA DO NEGÓCIO MUDOU.
+// AGORA PRECISA HAVER UMA CONDIÇÃO, A SABER: O VALOR PAGO NÃO PODE SER MENOR QUE O VALOR DO PRODUTO.
+// O SISTEMA DARÁ ERRO. MODIFIQUEI NO REPOSITÓRIO E VOCÊ PODE CONFERIR E ATUALIZAR AQUI TAMBÉM SE QUISER.
+// ABRAÇO!
+
 import java.util.Scanner;
 
 public class Lista02_Prof_Kalil {
-
+            
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
