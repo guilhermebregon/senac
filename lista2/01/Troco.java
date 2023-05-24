@@ -1,3 +1,5 @@
+//https://www.tutorialspoint.com/online_java_formatter.htm
+	  
 /*
 	Algoritmo -> Recebe o valor do produto e o pagamento, devolvendo o troco;
 	Por Kalil de Oliveira, 21 de maio de 2023
@@ -8,21 +10,26 @@ import java.util.Scanner;
 public class Troco {
    public static void main (String[] args) {
       	  // variaveis
-	  int primeiro=0, segundo=0;
+	  double ValorProduto=0.0, valorPago=0.0;
 	  Scanner sc = new Scanner(System.in);
 	  
 	  // entradas
 	  System.out.print ("Informe dois valores.");
 	  System.out.print ("Preco do produto -> ");
-	  primeiro = sc.nextInt();
+	  valorProduto = sc.nextInt();
 	  System.out.print ("Valor pago -> ");
-	  segundo = sc.nextInt();
-	  //https://www.tutorialspoint.com/online_java_formatter.htm
-	  // processos
-      	  int resultado = primeiro - segundo;
+	  valorPago = sc.nextInt();
+	  if(valorPago>valorProduto) {
+      	  	boolean trocoOk=true;
+	  } else {
+	  	System.out.println("Valor insuficiente");
+	  }
 	  
 	  // saídas
-      	  System.out.println ("Troco-> " + resultado);
+	   if (trocoOk) {
+      	    int resultado = valorProduto - valorPago;
+	     System.out.println ("Troco-> " + resultado);
+	   }
 	  sc.close();
    }
 }
