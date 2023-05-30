@@ -6,6 +6,8 @@ import java.util.*;
 Algoritmo -> Sistema de divisão de fatias de uma Pizzaria em até 12 fatias;
 		  -> Broto(2 sabores e ate 4 fatias), Media(3 sabores e ate 6 fatias)
 		  -> Grande(4 sabores e ate 9 fatias) e Gigante(4 sabores ate 12 fatias)
+	  -> O cliente escolhe o tamanho da pizza, a quantidade de sabores e quantidade 
+	     conforme as regras acima!
 		  
 Por Kalil de Oliveira, 21 de maio de 2023
 https://github.com/profkalil
