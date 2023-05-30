@@ -20,7 +20,7 @@ public static void main (String[] args) {
 	escolhePizza();
 }
 public static void escolhePizza() {
-	System.out.println ("\nBem-vindo a pizzaria SENAC!");
+	System.out.println ("\nBem-vindo a pizzaria TABAJARA!");
 	System.out.println ("Escolha um tipo de pizza->");
 	System.out.println ("1 - Broto");
 	System.out.println ("2 - Media");
@@ -63,7 +63,7 @@ public static void broto() {
 		}
 }
 public static void imprimePedido(String tipo, int qtdadeSabores, int qtdadeFatias) {
-	System.out.println("\n\nObrigado por escolher a pizza SENAC!");
+	System.out.println("\n\nObrigado por escolher a pizza TABAJARA!");
 	System.out.println("Pizza escolhida -> "+tipo);
 	System.out.println("Quantidade de sabores -> "+qtdadeSabores);
 	System.out.println("Quantidade de fatias -> "+qtdadeFatias);
