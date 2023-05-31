@@ -33,35 +33,101 @@ public static void escolhePizza() {
 		broto();
 	}
 	if (opcao ==2) {
-		
-		//media();
+		media();
 	}
 	if (opcao ==3) {
-		
-		//grande();
+		grande();
 	}
 	if (opcao ==4) {
-		
-		//gigante();
+		gigante();
 	}
 }
+private static void gigante() {
+	// TODO Auto-generated method stub
+	String tipo="Gigante";
+	System.out.println("\nVocê pode escolher até quatro sabores");
+	System.out.println("Quantidade Sabores -> ");
+	int qtdadeSabores = sc.nextInt();
+		if (qtdadeSabores > 0 && qtdadeSabores <= 4) {
+			System.out.println("\nVocê pode escolher até quatro fatias");
+			System.out.print ("Quantidade de fatias -> ");
+			int qtdadeFatias = sc.nextInt();
+			if (qtdadeFatias > 0 && qtdadeFatias <= 12){
+				imprimePedido(tipo, qtdadeSabores, qtdadeFatias);
+			}
+				else {
+				System.out.println("Erro!");		
+				}
+		}
+		else {
+			System.out.println("Erro!");
+	}
+}
+private static void grande() {
+	// TODO Auto-generated method stub
+	String tipo = "Grande";
+	System.out.println("\nVocÊ pode escolher até quatro sabores");
+	System.out.println("Quantidade Sabores -> ");
+	int qtdadeSabores = sc.nextInt();
+		if (qtdadeSabores > 0 && qtdadeSabores <= 4 ) {
+			System.out.println("\nVocê pode escolher até quatro fatias");
+			System.out.print ("Quantidade de fatias -> ");
+			int qtdadeFatias = sc.nextInt();
+			if (qtdadeFatias > 0 && qtdadeFatias <= 9) {
+				imprimePedido(tipo, qtdadeSabores, qtdadeFatias);
+			}
+			else {
+			System.out.println("Erro!");
+			}
+		}
+		else {
+			System.out.println("Erro!");
+		}
+}
+private static void media() {
+	// TODO Auto-generated method stub
+	String tipo = "Média";
+	System.out.println("\nVocÊ pode escolher até três sabores");
+	System.out.println("Quantidade Sabores -> ");
+	int qtdadeSabores = sc.nextInt();
+		if (qtdadeSabores > 0 && qtdadeSabores <= 3) {
+			System.out.println("\nVocÊ pode escolher até seis fatias");
+			System.out.print ("Quantidade de fatias -> ");
+			int qtdadeFatias = sc.nextInt();
+			if (qtdadeFatias > 0 && qtdadeFatias <= 6) {
+				imprimePedido(tipo, qtdadeSabores, qtdadeFatias);
+			}
+			else {
+			System.out.println("Erro!");	
+			}	
+		}
+		else {
+			System.out.println("Erro!");	
+		}
+}
+
 public static void broto() {
 	
 	String tipo="Broto";
 	System.out.println("\nVocê pode escolher até dois sabores");
 	System.out.print ("Quantidade Sabores -> ");
 	int qtdadeSabores = sc.nextInt();
-		if (qtdadeSabores>0 || qtdadeSabores<2) {
+		if (qtdadeSabores>0 && qtdadeSabores <= 2) {
 			System.out.println("\nVocê pode escolher até quatro fatias");
 			System.out.print ("Quantidade fatias -> ");
 			int qtdadeFatias = sc.nextInt();
-			if (qtdadeFatias>0 || qtdadeFatias<4) {
+			if (qtdadeFatias>0 && qtdadeFatias <= 4) {
 				imprimePedido(tipo, qtdadeSabores, qtdadeFatias);
 			}
-		} else {
+		else {
 			System.out.println("Erro");
 		}
+	}
+		else {
+			System.out.println("Erro!");
+		}
 }
+
 public static void imprimePedido(String tipo, int qtdadeSabores, int qtdadeFatias) {
 	System.out.println("\n\nObrigado por escolher a pizza TABAJARA!");
 	System.out.println("Pizza escolhida -> "+tipo);
