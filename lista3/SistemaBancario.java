@@ -7,6 +7,7 @@ public class SistemaBancario {
 		int operacao = 0, tentativas = 3;
 		String senha;
 		boolean senhaValida = false;
+		boolean sair = false;
 		double saldo = 0.0, limite = 1000.0, valorOperacao = 0.0;
 
 		while ((!senhaValida) && (tentativas > 0)) {
@@ -22,6 +23,15 @@ public class SistemaBancario {
 		if (senhaValida) {
 			while (true) {
 				System.out.println("\nSeu saldo atual-> " + saldo + " + " + limite + " de limite");
+				if (sair==true) {
+					System.out.println("Deseja sair? Sim ou Não");
+					System.out.print("Opcao - >");
+					String opcao = sc.next();
+					String sim="Sim"; String nao="Não";
+					if (opcao.equals(sim)) {
+						break;
+					} 
+				}
 				operacao = 0;
 				do {
 					System.out.print("\nEscolha uma operacao:" + "\n1 - debito \n2 - credito" + "\nOpcao -> ");
@@ -46,6 +56,7 @@ public class SistemaBancario {
 						System.out.println("Limite insuficiente. Fale com seu gerente");
 					}
 					valorOperacao = 0.0;
+					sair = true;
 				} else if (operacao == 2) {
 					if (limite < 1000) {
 						limite += valorOperacao;
@@ -58,6 +69,7 @@ public class SistemaBancario {
 						saldo += valorOperacao;
 					}
 					valorOperacao = 0.0;
+					sair = true;
 				}
 			}
 		} else {
