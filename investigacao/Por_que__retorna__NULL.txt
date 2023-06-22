@@ -65,7 +65,7 @@ public class DetetiveTest {
       Pergunta p = new Pergunta();
       Investigador dr = new Investigador();
       
-      p.cabecalho(); // Se chamar o cabecalho, retorna NULL!
+      p.cabecalho(); // Se não chamar o cabecalho, retorna NULL!
       
       if (dr.interrogatorio(joao, p)) {
          System.out.println("Fim");
