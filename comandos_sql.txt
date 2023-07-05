@@ -74,21 +74,20 @@ SELECT SUM(salario) FROM pessoas;
 
 SELECT SUM(salario) AS soma_dos_salarios FROM pessoas
 
--- usar COUNT(*) para contar
+-- usar COUNT(*) para contar, GROUP BY para agrupar e CONCAT para concatenar
 
 SELECT COUNT(*) AS qtd_pessoas FROM pessoas;
 
-SELECT COUNT(*) AS qtd_programadores FROM PESSOAS
+SELECT COUNT(*) AS qtd_programadores FROM pessoas
 WHERE profissao = "Programador";
 
 SELECT profissao, COUNT(*) AS qtd_profissao FROM pessoas
 GROUP BY profissao;
 
-INSERT INTO pessoas (nome, salario, data_nascimento, profissao)
-VALUES ("Jose", 9000, "1980-11-11", "Programador");
-
 SELECT CONCAT("O nome é", nome, "ganha R$", salario) AS descricao
 FROM pessoas;
+
+-- selecionar data com YEAR, MONTH e DAY
 
 SELECT YEAR(data_nascimento) AS ano_de_nascimento, 
 MONTH(data_nascimento) AS mes_de_nascimento,
