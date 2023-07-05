@@ -29,7 +29,7 @@ DROP TABLE nome_da_tabela;
 -- alterar tabela
 ALTER TABLE pessoas ADD COLUNN profissao VARCHAR(255);
 
--- exibir todos os dados
+-- exibir todos os dados ou um dados mais específico com WHERE
 SELECT * FROM pessoas
 
 SELECT * FROM pessoas
