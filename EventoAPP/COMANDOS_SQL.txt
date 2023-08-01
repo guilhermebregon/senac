@@ -1,0 +1,16 @@
+// cria um banco de dados
+CREATE DATABASE evento;
+
+// usa o banco de dados
+USE evento;
+
+// cria a tabela evento
+CREATE TABLE evento(
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	nome VARCHAR(100) NOT NULL,
+	data VARCHAR(100) NOT NULL,
+	ativo BOOLEAN NOT NULL
+);
+
+// exibe os itens da tabela evento
+SELECT * FROM evento;
