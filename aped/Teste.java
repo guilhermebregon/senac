@@ -6,6 +6,7 @@ public class Teste {
         ArrayList<Pergunta> perguntas = LeitorArquivo.lerPerguntasDoArquivo();
         ArrayList<String> respostas = LeitorArquivo.lerRespostasDoArquivo();
 
+        //Prova prova1 = new Prova();
         Prova prova = new Prova();
         for (Pergunta pergunta : perguntas) {
             prova.adicionarPergunta(pergunta);
